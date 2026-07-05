@@ -1,0 +1,16 @@
+2026-07-05 08:40:28 INFO     __main__ — Single-run mode (dry)
+2026-07-05 09:02:43 INFO     __main__ — Single-run mode (dry)
+2026-07-05 09:03:40 INFO     __main__ — Single-run mode (dry)
+2026-07-05 09:08:11 INFO     __main__ — Single-run mode (dry)
+2026-07-05 09:10:36 INFO     __main__ — Single-run mode (dry)
+2026-07-05 09:10:45 INFO     __main__ — Single-run mode (dry)
+2026-07-05 09:10:46 INFO     agents.monitor_agent — MonitorAgent starting — watchlist=['AAPL', 'TSLA', 'AMZN'] dry_run=True
+2026-07-05 09:10:50 INFO     agents.monitor_agent — Price: AAPL: $308.63 ▲4.84% (prev close $294.38)
+2026-07-05 09:10:50 INFO     agents.monitor_agent — Price: TSLA: $393.45 ▼7.49% (prev close $425.30)
+2026-07-05 09:10:50 INFO     agents.monitor_agent — Price: AMZN: $242.67 ▲0.40% (prev close $241.70)
+2026-07-05 09:10:53 INFO     analysis.llm_analyzer — Analyzing 1 price spike(s) with Gemini…
+2026-07-05 09:10:53 INFO     google_genai.models — AFC is enabled with max remote calls: 10.
+2026-07-05 09:10:54 INFO     httpx — HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-07-05 09:10:54 ERROR    agents.monitor_agent — Price analysis failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-07-05 09:10:54 INFO     agents.monitor_agent — No new material events — no alert sent
+2026-07-05 09:10:54 INFO     agents.monitor_agent — Run complete | tickers=3 spikes=1 filings=0 events=0 new=0 email=False duration=7.1s
